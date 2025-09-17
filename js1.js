@@ -1,5 +1,6 @@
 
 
+
 function wyswietl_wiek(){
     let w = document.getElementById("wiek").value;
 
@@ -15,3 +16,5 @@ function wyswietl() {
     
     document.getElementById("wynik").innerHTML = "Imię: " + imie + ", Nazwisko: " + nazwisko;
 }
+
+document.getElementById('wiek').addEventListener("change", wyswietl_wiek);
