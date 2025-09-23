@@ -39,10 +39,36 @@ form.addEventListener('input', function(event) {
   event.preventDefault();
 
   
-  const imie = document.getElementById('imief').value;
+ // const imie = document.getElementById('imief').value;
   const nazwisko = document.getElementById('nazwiskof').value;
   const wiek = document.getElementById('wiekf').value;
 
-    wyjscief.innerHTML = `Imię: ${imie} <br /> Nazwisko:${nazwisko} <br>Wiek: ${wiek}`;
+    wyjscief.innerHTML = `Imię: ${imief.value} <br /> Nazwisko:${nazwisko} <br>Wiek: ${wiek} <br> email: ${emailf.value}`;
     
+});
+
+
+const inputElement = document.getElementById('imief');
+inputElement.addEventListener('input', function() {
+const regex = new RegExp('^[a-zA-Z]+$');
+const str = imief.value;
+
+if(regex.test(str)){
+    informacja.innerHTML = '';
+} else {
+    informacja.innerHTML = 'Pole może zawierać tylko litery!';
+    informacja.style.color = 'red';
+} 
+
+console.log(regex.test(str));
+
+
+    if (this.value.length < 3) {
+      blad.innerHTML = 'Pole musi zawierać co najmniej 3 znaki!';
+      blad.style.color = 'red';
+      console.log('Pole musi zawierać co najmniej 5 znaków!');
+    } else {
+      blad.innerHTML = '';
+        console.log('OK');
+    }
 });
