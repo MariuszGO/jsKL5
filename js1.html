@@ -23,13 +23,45 @@
     
     <form>
         <label for="imie">Imię:</label>
-        <input type="text" id="imie"><br>
+        <input type="text" id="imie" oninput="wyswietl()"><br>
         <label for="nazwisko">Nazwisko:</label>
-        <input type="text" id="nazwisko">
-        <button type="button" oninput="wyswietl()">Wyślij</button>
+        <input type="text" id="nazwisko" oninput="wyswietl()">
+        <button type="button" onclick="wyswietl()">Wyślij</button>
+
+    
+            
     </form>
 
-    <H1 id="wynik"></H1>
+  <H1 id="wynik"></H1>
+<form>
+    <label for="wejscie1">Podaj tekst</label>
+    <input type="text" id="wejscie1">
+</form>
+
+    <p id="wyjscie1"></p>
+
+
+    <form id="myForm">
+  <label for="imief">Imię:</label><br>
+  <input type="text" id="imief" name="imief"><br>
+
+  <label for="nazwiskof">Nazwisko:</label><br>
+  <input type="text" id="nazwiskof" name="nazwiskof"><br>
+
+  <label for="wiekf">Wiek:</label><br>
+  <input type="number" id="wiekf" name="wiekf"><br><br>
+
+  <input type="submit" value="Wyślij">
+</form>
+
+<H3 id="wyjscief"></H3>
+
     <script src="js1.js"></script>
+
+
+
+
+
+
 </body>
 </html>
