@@ -43,9 +43,6 @@ form.addEventListener('input', function(event) {
   const nazwisko = document.getElementById('nazwiskof').value;
   const wiek = document.getElementById('wiekf').value;
 
-  //console.log("Imię:", imie);
-  //console.log("Nazwisko:", nazwisko);
-  //console.log("Wiek:", wiek);
-    wyjscief.textContent = `Wprowadzono: ${imie} ${nazwisko} ${wiek}`;
+    wyjscief.innerHTML = `Imię: ${imie} <br /> Nazwisko:${nazwisko} <br>Wiek: ${wiek}`;
     
 });
