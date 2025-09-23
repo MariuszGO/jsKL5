@@ -34,7 +34,7 @@ const wejscie = document.getElementById('wejscie1');
 
     const form = document.getElementById('myForm');
 
-form.addEventListener('change', function(event) {
+form.addEventListener('input', function(event) {
   
   event.preventDefault();
 
