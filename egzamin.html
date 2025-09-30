@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egzamin</title>
+</head>
+<body>
+
+    <H2>Oblicz miesięczną ratę</H2>
+
+    <form>
+     <input type="checkbox" id="checkbox1" name="checkbox1" value="react">
+        <label for="checkbox1">React</label> <br>
+     <input type="checkbox" id="checkbox2" name="checkbox2" value="js">
+        <label for="checkbox2">JS</label> <br>
+    <label for="text1">Liczba rat</label> <br>
+        <input type="text" id="iloscrat" name="iloscrat"> <br>
+    <select id="select1" name="select1">
+        <option value="Kraków">Kraków</option>
+        <option value="Katowice">Katowice</option>
+        <option value="Wrocław">Wrocław</option>
+        <option value="Warszawa">Warszawa</option>
+        </select><br>
+        <button type="button" onclick="oblicz()">Oblicz</button>
+
+
+    </form>
+    <H1 id="wynik"></H1>
+    <H3 id="rata1"></H3>
+    <h4 id="miasto1"></h4>
+
+    <script src="egzamin.js"></script>
+</body>
+</html>
