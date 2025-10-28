@@ -1,0 +1,51 @@
+
+
+nav{
+    width: 10%;
+    float: left;
+    text-align: center;
+    background-color: lightgreen;
+    height: 500px;
+}
+
+main{
+    width: 80%;
+    float: left;
+    background-color: lightcoral;
+    height: 500px;
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+input{
+    
+    margin: 5px;
+}
+button{
+  margin: 5px;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(56, 187, 141);
+    text-align: center;
+    padding: 10px;
+}
+section{
+    float: left;
+    width: 10%;
+    background-color: lightseagreen;
+    height: 500px;
+}
+
+header{
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
